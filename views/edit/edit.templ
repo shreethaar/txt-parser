@@ -1,0 +1,12 @@
+package edit
+
+templ Edit(content string) {
+    @layouts.Base("Edit", content) {
+        <h1>Edit Text File</h1>
+        <form action="/update" method="POST">
+            <textarea name="content" rows="20" cols="80">{ content }</textarea>
+            <br>
+            <button type="submit">Save</button>
+        </form>
+    }
+}

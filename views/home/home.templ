@@ -1,0 +1,10 @@
+package home
+
+templ Home(content string) {
+    @layouts.Base("Home", content) {
+        <h1>Text File Parser</h1>
+        <p>Current file content:</p>
+        <pre>{ content }</pre>
+        <a href="/edit">Edit File</a>
+    }
+}
